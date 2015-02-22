@@ -11,6 +11,9 @@ libraryDependencies ++= Seq(
   "org.specs2" %% "specs2" % "2.4" % "test"
   // mysql
   , "mysql" % "mysql-connector-java" % "5.1.28"
+  , "com.typesafe.slick" %% "slick" % "2.1.0"
+  , "com.typesafe.slick" %% "slick-codegen" % "2.1.0"
+  , "org.slf4j" % "slf4j-nop" % "1.6.4"
   // DB migrate
   , "org.flywaydb" % "flyway-sbt" % "3.1"
   // For config
