@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   // DB migrate
   //, "org.flywaydb" % "flyway-sbt" % "3.1"
   // For config
-  //, "com.typesafe" % "config" % "1.2.1"
+  , "com.typesafe" % "config" % "1.2.1"
 )
 
 scalacOptions in Test ++= Seq("-Yrangepos")

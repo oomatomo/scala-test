@@ -1,18 +1,22 @@
-package scala.test.lib.lib
+package scala.test.lib
 
 import org.specs2.mutable._
+import scala.test.lib._
 
-class MainSpec extends Specification {
+class HelloSpec extends Specification {
 
   "The 'Hello world' string" should {
-    "contain 11 characters" in {
-      "Hello world" must have size(11)
-    }
     "start with 'Hello'" in {
-      "Hello world" must startWith("Hello")
+      Hello.str must startWith("Hello")
     }
-    "end with 'world'" in {
-      "Hello world" must endWith("world")
+    "end with 'ok'" in {
+      Hello.str must endWith("ok")
     }
+  }
+  "config読み込み確認" should {
+    "環境変数のデフォルトはapplication.conf" in {
+      Hello.conf must beMatching("application")
+    }
+
   }
 } 

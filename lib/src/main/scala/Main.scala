@@ -1,8 +1,12 @@
-package scala.test.lib.lib
+package scala.test.lib
 
-object Main {
-  def main(args: Array[String]) {
-    println("Hello World!!!")
+import com.typesafe.config.{ Config, ConfigFactory }
+
+object Hello {
+  val str: String = "Hello World!!! ok"
+
+  def conf(): String = {
+    val config: Config = ConfigFactory.load();
+    config.getString("env")
   }
 }
-
