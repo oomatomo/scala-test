@@ -18,8 +18,11 @@ libraryDependencies ++= Seq(
   , "org.flywaydb" % "flyway-sbt" % "3.1"
   // For config
   , "com.typesafe" % "config" % "1.2.1"
+  // For aws
+  , "com.github.seratch" %% "awscala" % "0.4.+"
 )
 
+// spec2
 scalacOptions in Test ++= Seq("-Yrangepos")
 
 // Read here for optional dependencies:
