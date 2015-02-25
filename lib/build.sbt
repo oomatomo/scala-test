@@ -20,6 +20,8 @@ libraryDependencies ++= Seq(
   , "com.typesafe" % "config" % "1.2.1"
   // For aws
   , "com.github.seratch" %% "awscala" % "0.4.+"
+  // For XML
+  , "org.scala-lang.modules" %% "scala-xml" % "1.0.3"
 )
 
 // spec2
